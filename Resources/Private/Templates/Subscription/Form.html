@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="msmailchimp">
+    <f:form action="subscribe" class="msmailchimp-form" data-msmailchimp-form="true">
+        <div class="msmailchimp-form-group">
+            <label for="msmailchimp-email" class="msmailchimp-label">Email</label>
+            <input type="email"
+                   id="msmailchimp-email"
+                   name="email"
+                   class="msmailchimp-input"
+                   placeholder="your@email.com"
+                   required />
+        </div>
+        <button type="submit" class="msmailchimp-button">Subscribe</button>
+    </f:form>
+    <div class="msmailchimp-message" data-msmailchimp-message="true" style="display: none;"></div>
+</div>
+
+</html>

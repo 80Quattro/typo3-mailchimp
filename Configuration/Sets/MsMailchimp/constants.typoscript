@@ -1,0 +1,18 @@
+plugin.tx_msmailchimp {
+    view {
+        # cat=plugin.tx_msmailchimp/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:ms_mailchimp/Resources/Private/Templates/
+        # cat=plugin.tx_msmailchimp/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:ms_mailchimp/Resources/Private/Partials/
+        # cat=plugin.tx_msmailchimp/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:ms_mailchimp/Resources/Private/Layouts/
+    }
+    settings {
+        # cat=plugin.tx_msmailchimp/settings; type=string; label=Mailchimp API Key
+        apiKey =
+        # cat=plugin.tx_msmailchimp/settings; type=string; label=Mailchimp Server Prefix (e.g., us1, us2, eu1)
+        serverPrefix =
+        # cat=plugin.tx_msmailchimp/settings; type=string; label=Mailchimp Audience/List ID
+        listId =
+    }
+}

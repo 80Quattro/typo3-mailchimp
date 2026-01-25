@@ -1,0 +1,26 @@
+plugin.tx_msmailchimp {
+    view {
+        templateRootPaths {
+            0 = EXT:ms_mailchimp/Resources/Private/Templates/
+            1 = {$plugin.tx_msmailchimp.view.templateRootPath}
+        }
+
+        partialRootPaths {
+            0 = EXT:ms_mailchimp/Resources/Private/Partials/
+            1 = {$plugin.tx_msmailchimp.view.partialRootPath}
+        }
+
+        layoutRootPaths {
+            0 = EXT:ms_mailchimp/Resources/Private/Layouts/
+            1 = {$plugin.tx_msmailchimp.view.layoutRootPath}
+        }
+    }
+    settings {
+        apiKey = {$plugin.tx_msmailchimp.settings.apiKey}
+        serverPrefix = {$plugin.tx_msmailchimp.settings.serverPrefix}
+        listId = {$plugin.tx_msmailchimp.settings.listId}
+    }
+}
+
+page.includeCSS.msmailchimp = EXT:ms_mailchimp/Resources/Public/Css/Subscription.css
+page.includeJSFooter.msmailchimp = EXT:ms_mailchimp/Resources/Public/JavaScript/Subscription.js
