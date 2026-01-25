@@ -54,6 +54,7 @@
 }
 
 .msmailchimp-message {
+    display: none;
     margin-top: 0.75rem;
     padding: 0.75rem;
     border-radius: 4px;
