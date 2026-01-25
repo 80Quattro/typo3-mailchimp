@@ -4,15 +4,15 @@
 <div class="msmailchimp">
     <f:form action="subscribe" class="msmailchimp-form" data-msmailchimp-form="true">
         <div class="msmailchimp-form-group">
-            <label for="msmailchimp-email" class="msmailchimp-label">Email</label>
+            <label for="msmailchimp-email" class="msmailchimp-label"><f:translate key="form.email.label" /></label>
             <input type="email"
                    id="msmailchimp-email"
                    name="email"
                    class="msmailchimp-input"
-                   placeholder="your@email.com"
+                   placeholder="{f:translate(key: 'form.email.placeholder')}"
                    required />
         </div>
-        <button type="submit" class="msmailchimp-button">Subscribe</button>
+        <button type="submit" class="msmailchimp-button"><f:translate key="form.submit" /></button>
     </f:form>
     <div class="msmailchimp-message" data-msmailchimp-message="true" style="display: none;"></div>
 </div>
