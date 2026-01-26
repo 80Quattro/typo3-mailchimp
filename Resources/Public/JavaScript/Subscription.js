@@ -10,7 +10,7 @@
 
                 const messageElement = form.parentElement.querySelector('[data-msmailchimp-message]');
                 const submitButton = form.querySelector('button[type="submit"]');
-                const emailInput = form.querySelector('input[name="email"]');
+                const emailInput = form.querySelector('input[name="tx_msmailchimp_subscription\[email\]"]');
 
                 if (!emailInput || !submitButton || !messageElement) {
                     return;
@@ -21,7 +21,7 @@
                 messageElement.className = 'msmailchimp-message';
 
                 const formData = new FormData(form);
-                const actionUrl = form.getAttribute('action');
+                const actionUrl = form.getAttribute('action') + '&type=4812396';
 
                 fetch(actionUrl, {
                     method: 'POST',

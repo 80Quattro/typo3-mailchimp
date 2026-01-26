@@ -17,10 +17,26 @@ plugin.tx_msmailchimp {
     }
     settings {
         apiKey = {$plugin.tx_msmailchimp.settings.apiKey}
-        serverPrefix = {$plugin.tx_msmailchimp.settings.serverPrefix}
         listId = {$plugin.tx_msmailchimp.settings.listId}
     }
 }
 
 page.includeCSS.msmailchimp = EXT:ms_mailchimp/Resources/Public/Css/Subscription.css
 page.includeJSFooter.msmailchimp = EXT:ms_mailchimp/Resources/Public/JavaScript/Subscription.js
+
+msmailchimp_json = PAGE
+msmailchimp_json {
+    typeNum = 4812396
+
+    10 = EXTBASEPLUGIN
+    10 {
+        extensionName = MsMailchimp
+        pluginName = Subscription
+    }
+
+    config {
+        disableAllHeaderCode = 1
+        additionalHeaders.10.header = Content-type:application/json
+        admPanel = 0
+    }
+}

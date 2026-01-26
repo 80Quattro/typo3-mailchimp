@@ -106,7 +106,7 @@ readonly class MailchimpClient
 
         return [
             'apiKey' => isset($settings['apiKey']) && is_string($settings['apiKey']) ? $settings['apiKey'] : '',
-            'serverPrefix' => isset($settings['serverPrefix']) && is_string($settings['serverPrefix']) ? $settings['serverPrefix'] : '',
+            'serverPrefix' => isset($settings['apiKey']) && is_string($settings['apiKey']) ? substr($settings['apiKey'], -3) : '',
             'listId' => isset($settings['listId']) && is_string($settings['listId']) ? $settings['listId'] : '',
         ];
     }

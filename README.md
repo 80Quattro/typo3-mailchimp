@@ -52,7 +52,6 @@ plugin.tx_msmailchimp.settings {
 | Setting | Default | Description |
 |---------|---------|-------------|
 | `settings.apiKey` | - | Mailchimp API key (required) |
-| `settings.serverPrefix` | - | Mailchimp server prefix, e.g., `us1` (required) |
 | `settings.listId` | - | Mailchimp Audience/List ID (required) |
 | `view.templateRootPath` | EXT:ms_mailchimp/Resources/Private/Templates/ | Path to templates |
 | `view.partialRootPath` | EXT:ms_mailchimp/Resources/Private/Partials/ | Path to partials |

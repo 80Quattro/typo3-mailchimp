@@ -10,8 +10,6 @@ plugin.tx_msmailchimp {
     settings {
         # cat=plugin.tx_msmailchimp/settings; type=string; label=Mailchimp API Key
         apiKey =
-        # cat=plugin.tx_msmailchimp/settings; type=string; label=Mailchimp Server Prefix (e.g., us1, us2, eu1)
-        serverPrefix =
         # cat=plugin.tx_msmailchimp/settings; type=string; label=Mailchimp Audience/List ID
         listId =
     }
