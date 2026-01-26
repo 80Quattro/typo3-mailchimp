@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace MarekSkopal\MsMailchimp\Controller;
 
 use MarekSkopal\MsMailchimp\Client\MailchimpClient;
+use MarekSkopal\MsMailchimp\Utility\LocalizationUtility;
 use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use const FILTER_VALIDATE_EMAIL;
@@ -25,11 +26,11 @@ class SubscriptionController extends ActionController
         $email = trim($email);
 
         if ($email === '') {
-            return $this->createJsonResponse(false, 'Please enter your email address');
+            return $this->createJsonResponse(false, LocalizationUtility::translate('message.error.emailEmpty'));
         }
 
         if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
-            return $this->createJsonResponse(false, 'Please enter a valid email address');
+            return $this->createJsonResponse(false, LocalizationUtility::translate('message.error.emailInvalid'));
         }
 
         $response = $this->mailchimpClient->subscribe($email);
@@ -37,7 +38,7 @@ class SubscriptionController extends ActionController
         return $this->createJsonResponse($response->success, $response->message);
     }
 
-    protected function createJsonResponse(bool $success, string $message): ResponseInterface
+    private function createJsonResponse(bool $success, string $message): ResponseInterface
     {
         return $this->jsonResponse((string) json_encode([
             'success' => $success,

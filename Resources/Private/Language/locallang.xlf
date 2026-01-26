@@ -12,6 +12,27 @@
             <trans-unit id="form.submit" resname="form.submit">
                 <source>Subscribe</source>
             </trans-unit>
+            <trans-unit id="message.success.subscribed" resname="message.success.subscribed">
+                <source>Successfully subscribed!</source>
+            </trans-unit>
+            <trans-unit id="message.error.emailEmpty" resname="message.error.emailEmpty">
+                <source>Please enter your email address.</source>
+            </trans-unit>
+            <trans-unit id="message.error.emailInvalid" resname="message.error.emailInvalid">
+                <source>Please enter a valid email address.</source>
+            </trans-unit>
+            <trans-unit id="message.error.alreadySubscribed" resname="message.error.alreadySubscribed">
+                <source>This email is already subscribed.</source>
+            </trans-unit>
+            <trans-unit id="message.error.subscriptionFailed" resname="message.error.subscriptionFailed">
+                <source>Subscription failed. Please try again later.</source>
+            </trans-unit>
+            <trans-unit id="message.error.configurationIncomplete" resname="message.error.configurationIncomplete">
+                <source>Mailchimp configuration is incomplete.</source>
+            </trans-unit>
+            <trans-unit id="message.error.general" resname="message.error.general">
+                <source>An error occurred. Please try again later.</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

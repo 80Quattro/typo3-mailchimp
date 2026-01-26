@@ -15,6 +15,34 @@
                 <source>Subscribe</source>
                 <target>Odebírat</target>
             </trans-unit>
+            <trans-unit id="message.success.subscribed" resname="message.success.subscribed">
+                <source>Successfully subscribed!</source>
+                <target>Úspěšně přihlášeno k odběru!</target>
+            </trans-unit>
+            <trans-unit id="message.error.emailEmpty" resname="message.error.emailEmpty">
+                <source>Please enter your email address.</source>
+                <target>Zadejte prosím svou e-mailovou adresu.</target>
+            </trans-unit>
+            <trans-unit id="message.error.emailInvalid" resname="message.error.emailInvalid">
+                <source>Please enter a valid email address.</source>
+                <target>Zadejte prosím platnou e-mailovou adresu.</target>
+            </trans-unit>
+            <trans-unit id="message.error.alreadySubscribed" resname="message.error.alreadySubscribed">
+                <source>This email is already subscribed.</source>
+                <target>Tento e-mail je již přihlášen k odběru.</target>
+            </trans-unit>
+            <trans-unit id="message.error.subscriptionFailed" resname="message.error.subscriptionFailed">
+                <source>Subscription failed. Please try again later.</source>
+                <target>Přihlášení se nezdařilo. Zkuste to prosím později.</target>
+            </trans-unit>
+            <trans-unit id="message.error.configurationIncomplete" resname="message.error.configurationIncomplete">
+                <source>Mailchimp configuration is incomplete.</source>
+                <target>Konfigurace Mailchimp je neúplná.</target>
+            </trans-unit>
+            <trans-unit id="message.error.general" resname="message.error.general">
+                <source>An error occurred. Please try again later.</source>
+                <target>Došlo k chybě. Zkuste to prosím později.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
