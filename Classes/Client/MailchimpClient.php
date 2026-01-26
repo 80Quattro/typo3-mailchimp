@@ -51,6 +51,7 @@ readonly class MailchimpClient
                         'Content-Type' => 'application/json',
                     ],
                     'body' => $body,
+                    'http_errors' => false,
                 ],
             );
 
