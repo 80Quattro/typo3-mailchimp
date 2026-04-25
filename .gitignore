@@ -4,3 +4,4 @@ vendor
 ray.php
 .phpunit.cache
 composer.lock
+/.claude/settings.local.json
