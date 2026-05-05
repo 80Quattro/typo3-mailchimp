@@ -17,6 +17,7 @@ plugin.tx_msmailchimp {
     }
     settings {
         apiKey = {$plugin.tx_msmailchimp.settings.apiKey}
+        serverPrefix = {$plugin.tx_msmailchimp.settings.serverPrefix}
         listId = {$plugin.tx_msmailchimp.settings.listId}
     }
 }
